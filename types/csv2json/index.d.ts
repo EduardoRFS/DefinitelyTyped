@@ -5,7 +5,7 @@
 
 /// <reference types="node" />
 
-import { Writable } from "stream";
+import { Duplex } from "stream";
 
 declare namespace csv2json {
   interface Options {
@@ -14,6 +14,6 @@ declare namespace csv2json {
   }
 }
 
-declare function csv2json(options?: csv2json.Options): Writable;
+declare function csv2json(options?: csv2json.Options): Duplex;
 
 export = csv2json;
